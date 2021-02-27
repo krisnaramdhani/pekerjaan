@@ -191,7 +191,6 @@ Send2Trash==1.5.0
 simplegeneric==0.8.1
 singledispatch @ file:///tmp/build/80754af9/singledispatch_1602523705405/work
 sip==4.19.13
-six @ file:///C:/ci/six_1605187374963/work
 snowballstemmer==2.0.0
 sortedcollections==1.2.1
 sortedcontainers==2.2.2
