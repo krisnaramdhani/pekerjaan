@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>Drs. APEP YOSA FIRMANSYAH, M.Si</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19660902 199303 1 004</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Sekretaris Badan</label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+    <a class="nav-item nav-link" href="{{ url_for('umpeg') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+            value=>Umpeg </a>
+    <a class="nav-item nav-link" href="{{ url_for('pep') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+            value=>PEP</a>
+    <a class="nav-item nav-link" href="{{ url_for('keuangan') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+            value=>Keuangan</a>
+</div>
+<div class="navbar-nav mr-auto">
+    <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+            value=>Kembali</a>
+  </div>
+{% endblock %}

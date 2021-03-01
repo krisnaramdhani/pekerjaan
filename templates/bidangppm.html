@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>CECEP RIDWAN, S.STP.,ME</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19770930 199602 1 002</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Kepala Bidang Pemerintahan dan Pembangunan Manusia</label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidppm1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Pembangunan Manusia  </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidppm2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Pemerintahan pada Badan Perencanaan Pembangunan, Penelitian dan Pengembangan Daerah  </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Kembali</a>
+</div>
+{% endblock %}

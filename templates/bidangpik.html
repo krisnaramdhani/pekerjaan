@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>H.ARIED MOHAMMAD F.A.ST.,MT</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19750529 200312 1 004</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Kepala Bidang Perekonomian ,Infrastruktur dan Kewilayahan</label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidpik1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Perekonomian dan Sumber Daya Alam  </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidpik2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Infrastruktur dan Kewilayahan  </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Kembali</a>
+</div>
+{% endblock %}

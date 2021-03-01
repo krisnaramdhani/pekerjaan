@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>ANDRIANA REVALDHI, SE.,MM.</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19781227 200501 1 009</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Kepala Bidang Pendanaan, Pengendalian dan Evaluasi </label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidppe1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Pengendalian dan Evaluasi Pemerintahan </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidppe2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Perencanaan dan Pendanaan </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Kembali</a>
+</div>
+{% endblock %}

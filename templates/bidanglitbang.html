@@ -1,0 +1,28 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>Drs. TATANG SUPRIATNA</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19680425 199403 1 015</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Kepala Bidang Penelitian dan Pengembangan</label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidlitbang1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Sosial, Ekonomi, Infrastruktur dan Kewilayahan </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('subidlitbang2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>Kasubid Pemerintahan, Inovasi, dan Teknologi </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Kembali</a>
+</div>
+{% endblock %}

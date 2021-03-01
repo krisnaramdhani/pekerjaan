@@ -1,0 +1,66 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <img src="https://cdn.pixabay.com/photo/2014/11/04/08/21/welcome-516287_960_720.png" style="width:700px;height:100px;">
+        <font color="black" size="5"><strong>BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PENGEMBANGAN DAERAH KOTA TASIKMALAYA</strong></font>
+    </form>
+</div>
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>Drs. H. DINDIN SAEPUDIN AHMAD, M.Si</strong></label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">NIP. 19611129 198903 1 003</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-control">Kepala Badan</label>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+    <a class="nav-item nav-link" href="{{ url_for('sekretariat') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+            value=>SEKRETARIAT </a>
+</div>
+<div class="navbar-nav mr-auto">
+    <a class="nav-item nav-link" href="{{ url_for('bidangppe') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+            value=>BIDANG PPE </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('bidangppm') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>BIDANG PPM </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('bidangpik') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>BIDANG PIK </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('bidanglitbang') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>BIDANG LITBANG </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('fungsional') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>FUNGSIONAL </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('thl') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>TENAGA HARIAN LEPAS </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('satpam') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>SECURITY </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('ob') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>CLEANING SERVICE </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('sopir') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>PENGEMUDI </a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('keterangan') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+          value=>KETERANGAN </a>
+</div>
+{% endblock %}

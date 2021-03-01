@@ -1,0 +1,22 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div>
+    <form action="" method="POST">
+        <div class="mb-3">
+          <label class="form-control"><strong>DESIGN AND CREATOR => KRISNA RAMDHANI WANDAKUSUMAH</strong></label>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"><strong>KETERANGAN</strong></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Assalamualaikum Wr. Wb. Aplikasi Web Browser ini di buat oleh KRISNA RAMDHANI WANDAKUSUMAH, dalam rangka mempermudah untuk melihat daftar pegawai di Bappelitbangda, apabila ada kekurangan dan kekeliruan mohon maaf yang sebesar-besarnya, kritik dan saran atau untuk tambahan scrift bisa hubungi di whatsapp saya => 0895327299190, demikian dan terima kasih.</textarea>
+        </div>
+    </form>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="whatsapp://send?text=Assalamualaikum&phone=+62895327299190"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Klik whatsapp</a>
+</div>
+<div class="navbar-nav mr-auto">
+  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+          value=>Kembali</a>
+</div>
+{% endblock %}
