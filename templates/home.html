@@ -1,66 +1,187 @@
 {% extends "main_layout.html" %}
 {% block content %}
+<style type="text/css">
+body {
+  font-family: 'Noto Sans';
+  padding: auto;
+  text-align: left;
+}
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr {
+  width: 5%;
+  background-color: black;
+}
+td,th {
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 5px%;
+}
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: darkcyan;
+  color: gold;
+}
+.stroke {
+  color: black;
+  font-family: 'Noto Sans';
+  font-weight: bolder;
+  -webkit-text-stroke: 0.01em gold;
+}
+.stroke2 {
+  color: darkred;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.01em gold;
+}
+</style>
 <div>
     <form action="" method="POST">
-        <img src="https://cdn.pixabay.com/photo/2014/11/04/08/21/welcome-516287_960_720.png" style="width:700px;height:100px;">
-        <font color="black" size="5"><strong>BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PENGEMBANGAN DAERAH KOTA TASIKMALAYA</strong></font>
+        <center><img src="https://cdn.pixabay.com/photo/2014/11/04/08/21/welcome-516287_960_720.png" style="width:700px;height:100px;"></center>
+        <font class="stroke" size="6"><center><strong>BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PENGEMBANGAN DAERAH KOTA TASIKMALAYA</strong></center></font>
+        <font class="stroke2" size="4"><center><strong>JL. Letnan Harun No. 1 Telp (0265) 334018 - fax (0265) 7292511, Kodepos 46151 - Komplek Balekota Tasikmalaya</strong></center></font>
     </form>
 </div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>Drs. H. DINDIN SAEPUDIN AHMAD, M.Si</strong></label>
+<br>
+<table class="table-dark">
+  <thead color="gold">
+    <th><center><strong>KEPALA BADAN</strong></center></th>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td><center><strong>Drs. H. DINDIN SAEPUDIN AHMAD, M.Si</strong></center></td>
+    </tr>
+    <tr class="table-active">
+      <td><center><strong>NIP. 19611129 198903 1 003</strong></center></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<body>
+  <table>
+    <h1>
+      <font color="yellow" size="5"><center><strong>DAFTAR BIDANG</strong></center></font>
+    </h1>
+    <tr>
+      <th><center>NOMOR</center></th>
+      <th><center>NAMA BIDANG</center></th>
+    </tr>
+    <tr>
+      <td><center>1</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('sekretariat') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>SEKRETARIAT</a>
         </div>
-        <div class="mb-3">
-          <label class="form-control">NIP. 19611129 198903 1 003</label>
+      </td>
+    </tr>
+    <tr>
+      <td><center>2</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('bidangppe') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>BIDANG PPE </a>
         </div>
-        <div class="mb-3">
-          <label class="form-control">Kepala Badan</label>
+      </td>
+    </tr>
+    <tr>
+      <td><center>3</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('bidangppm') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>BIDANG PPM </a>
         </div>
-    </form>
-</div>
-<div class="navbar-nav mr-auto">
-    <a class="nav-item nav-link" href="{{ url_for('sekretariat') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-            value=>SEKRETARIAT </a>
-</div>
-<div class="navbar-nav mr-auto">
-    <a class="nav-item nav-link" href="{{ url_for('bidangppe') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-            value=>BIDANG PPE </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('bidangppm') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>BIDANG PPM </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('bidangpik') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>BIDANG PIK </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('bidanglitbang') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>BIDANG LITBANG </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('fungsional') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>FUNGSIONAL </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('thl') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>TENAGA HARIAN LEPAS </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('satpam') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>SECURITY </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('ob') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>CLEANING SERVICE </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('sopir') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>PENGEMUDI </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('keterangan') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>KETERANGAN </a>
-</div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>4</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('bidangpik') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>BIDANG PIK </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>5</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('bidanglitbang') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>BIDANG LITBANG </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>6</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('fungsional') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>FUNGSIONAL </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>7</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('thl') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>TENAGA HARIAN LEPAS </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>8</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('satpam') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>SECURITY </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>9</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('ob') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>CLEANING SERVICE </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>10</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('sopir') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>PENGEMUDI </a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><center>11</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('keterangan') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>KETERANGAN DESIGN & CREATOR</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="table-active">
+        <div class="navbar-nav mr-auto">
+          <center><a class="nav-item nav-link" href="{{ url_for('logout') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+                  value=>LOGOUT</a></center>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
 {% endblock %}

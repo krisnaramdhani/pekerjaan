@@ -1,28 +1,87 @@
 {% extends "main_layout.html" %}
 {% block content %}
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>Drs. TATANG SUPRIATNA</strong></label>
+<style type="text/css">
+  body {
+    font-family: 'Noto Sans';
+    padding: auto;
+    text-align: left;
+  }
+  table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  tr {
+    width: 5%;
+    background-color: black;
+  }
+  td,th {
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 5px%;
+  }
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkcyan;
+    color: gold;
+  }
+</style>
+<table class="table-dark">
+  <thead color="gold">
+    <th><center><strong>KEPALA BIDANG PENELITIAN DAN PENGEMBANGAN</strong></center></th>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td><center><strong>Drs. TATANG SUPRIATNA</strong></center></td>
+    </tr>
+    <tr class="table-active">
+      <td><center><strong>NIP. 19680425 199403 1 015</strong></center></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<body>
+  <table>
+    <h1>
+      <font color="yellow" size="5"><center><strong>DAFTAR SUB BIDANG</strong></center></font>
+    </h1>
+    <tr>
+      <th><center>NOMOR</center></th>
+      <th><center>NAMA SUB BIDANG</center></th>
+    </tr>
+    <tr>
+      <td><center>1</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('subidlitbang1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>KASUBID SOSIAL, EKONOMI, INFRASTRUKTUR DAN KEWILAYAHAN</a>
         </div>
-        <div class="mb-3">
-          <label class="form-control">NIP. 19680425 199403 1 015</label>
+      </td>
+    </tr>
+    <tr>
+      <td><center>2</center></td>
+      <td>
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{{ url_for('subidlitbang2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
+                  value=>KASUBID PEMERINTAHAN, INOVASI DAN TEKNOLOGI</a>
         </div>
-        <div class="mb-3">
-          <label class="form-control">Kepala Bidang Penelitian dan Pengembangan</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="table-active">
+        <div class="navbar-nav mr-auto">
+          <center><a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+                  value=>HOME</a></center>
         </div>
-    </form>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('subidlitbang1') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>Kasubid Sosial, Ekonomi, Infrastruktur dan Kewilayahan </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('subidlitbang2') }}"><input type="submit" class="btn btn-success btn btn-outline-warning"
-          value=>Kasubid Pemerintahan, Inovasi, dan Teknologi </a>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
-          value=>Kembali</a>
-</div>
+      </td>
+    </tr>
+  </table>
+</body>
 {% endblock %}

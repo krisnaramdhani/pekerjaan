@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>BAPPELITBANGDA</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <style>
+        body{
+            color: #fff;
+            background-image: url("https://i.pinimg.com/originals/a0/b3/5e/a0b35e8da91c429df1c2579adb03f436.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
-<body style="background-image:url(https://i.pinimg.com/originals/a0/b3/5e/a0b35e8da91c429df1c2579adb03f436.jpg); background-size: 100%;">
+<body>
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-
             <div class="container">
                 <img src="https://i.pinimg.com/564x/f9/73/7b/f9737b8c60e115e1e3b4647ecd641b99.jpg" style="width:40px;height:40px;">
                 <a class="navbar-brand mr-4" href="/">
@@ -29,16 +37,36 @@
                         <a class="nav-item nav-link" href="{{ url_for('logout') }}"><input type="submit" class="btn btn-primary btn btn-outline-info"
                                 value=>Logout</a>
                     </div>
-                    <div class="mb-3">
-                        <a class="nav-item nav-link" href="whatsapp://send?text=Assalamualaikum&phone=+62895327299190">Design & Creator Kris</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Halaman
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="{{ url_for('sekretariat') }}">SEKRETARIAT</a>
+                              <a class="dropdown-item" href="{{ url_for('bidangppe') }}">BIDANG PPE</a>
+                              <a class="dropdown-item" href="{{ url_for('bidangppm') }}">BIDANG PPM</a>
+                              <a class="dropdown-item" href="{{ url_for('bidangpik') }}">BIDANG PIK</a>
+                              <a class="dropdown-item" href="{{ url_for('bidanglitbang') }}">BIDANG LITBANG</a>
+                              <a class="dropdown-item" href="{{ url_for('fungsional') }}">FUNGSIONAL</a>
+                              <a class="dropdown-item" href="{{ url_for('thl') }}">THL</a>
+                              <a class="dropdown-item" href="{{ url_for('satpam') }}">SECURITY</a>
+                              <a class="dropdown-item" href="{{ url_for('ob') }}">CLEANING SERVICE</a>
+                              <a class="dropdown-item" href="{{ url_for('sopir') }}">PENGEMUDI</a>
+                              <a class="dropdown-item" href="{{ url_for('keterangan') }}">KETERANGAN</a>
+                              <a class="dropdown-item" href="{{ url_for('index') }}">HOME</a>
+                              <a class="dropdown-item" href="{{ url_for('logout') }}">LOGOUT</a>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="whatsapp://send?text=Assalamualaikum&phone=+62895327299190">Design & Creator</a>
                     </div>
                 </div>
         </nav>
     </header>
-
-
-    
-
     <main role="main" class="container">
         <div class="row">
             <div class="col-md-8">
@@ -52,17 +80,10 @@
                 {% endwith %}
                 {% block content %}{% endblock %}
             </div>
-
         </div>
     </main>
-    
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    
 </body>
 </html>

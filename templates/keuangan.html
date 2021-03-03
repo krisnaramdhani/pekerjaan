@@ -1,59 +1,86 @@
 {% extends "main_layout.html" %}
 {% block content %}
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>1. HERRA HAERANI, S.Sos</strong></label>
+<style type="text/css">
+  body {
+    font-family: 'Noto Sans';
+    padding: auto;
+    text-align: left;
+  }
+  table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  tr {
+    width: 5%;
+    background-color: black;
+  }
+  td,th {
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 5px%;
+  }
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkcyan;
+    color: gold;
+  }
+</style>
+<table class="table-dark">
+  <thead color="gold">
+    <th><center><strong>Kepala Sub Bagian Keuangan</strong></center></th>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td><center><strong>HERRA HAERANI, S.Sos</strong></center></td>
+    </tr>
+    <tr class="table-active">
+      <td><center><strong>NIP. 19730119 199901 2 001</strong></center></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<body>
+  <table>
+    <tr>
+      <th><center>NOMOR</center></th>
+      <th><center>NAMA</center></th>
+      <th><center>NIP</center></th>
+      <th><center>JABATAN</center></th>
+    </tr>
+    <tr>
+      <td><center>1</center></td>
+      <td><strong>AI WIBAWA ZENAL</strong></td>
+      <td><center>19670225 200701 1 011</center></td>
+      <td><center>Pengadministrasi Laporan Keuangan</center></td>
+    </tr>
+    <tr>
+      <td><center>2</center></td>
+      <td><strong>KRISNA RAMDHANI WANDAKUSUMAH</strong></td>
+      <td><center>19810705 200901 1 007</center></td>
+      <td><center>Penata Laporan Keuangan</center></td>
+    </tr>
+    <tr>
+      <td><center>3</center></td>
+      <td><strong>LUSSI LUSSIDIANA ISKANDAR, S.IP</strong></td>
+      <td><center>19820714 200801 2 007</center></td>
+      <td><center>Bendahara</center></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="table-active">
+        <div class="navbar-nav mr-auto">
+          <center><a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+                  value=>HOME</a></center>
         </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19730119 199901 2 001</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Kepala Sub Bagian Keuangan </label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>2. AI WIBAWA ZENAL</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19670225 200701 1 011</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Pengadministrasi Laporan Keuangan</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>3. KRISNA RAMDHANI WANDAKUSUMAH</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19810705 200901 1 007</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Penata Laporan Keuangan</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>4. LUSSI LUSSIDIANA ISKANDAR, S.IP</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19820714 200801 2 007</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Bendahara</label>
-        </div>
-    </form>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
-          value=>Kembali</a>
-</div>
+      </td>
+    </tr>
+  </table>
+</body>
 {% endblock %}

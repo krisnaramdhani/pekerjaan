@@ -1,163 +1,126 @@
 {% extends "main_layout.html" %}
 {% block content %}
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>1. HJ. LIYA MULIYANI, S.PI., M.Si</strong></label>
+<style type="text/css">
+  body {
+    font-family: 'Noto Sans';
+    padding: auto;
+    text-align: left;
+  }
+  table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  tr {
+    width: 5%;
+    background-color: black;
+  }
+  td,th {
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 5px%;
+  }
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkcyan;
+    color: gold;
+  }
+</style>
+<body>
+  <table>
+    <tr>
+      <th><center>NOMOR</center></th>
+      <th><center>NAMA</center></th>
+      <th><center>NIP</center></th>
+      <th><center>JABATAN</center></th>
+    </tr>
+    <tr>
+      <td><center>1</center></td>
+      <td><strong>HJ. LIYA MULIYANI, S.PI., M.Si</strong></td>
+      <td><strong>19700608 199703 2 005</strong></td>
+      <td><strong>Ahli Madya (Sub Bagian Perekonomian dan SDA)</strong></td>
+    </tr>
+    <tr>
+      <td><center>2</center></td>
+      <td><strong>NANI HERNIATI, S.KOM</strong></td>
+      <td><strong>19770711 200901 2 003</strong></td>
+      <td><strong>Perencana Muda (Subid Pengendalian dan Evaluasi Pemerintahan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>3</center></td>
+      <td><strong>ELA TJANTINIA PRIATINI, ST</strong></td>
+      <td><strong>19671002 200501 2 006</strong></td>
+      <td><strong>Perencana Muda (Sub Bagian Perekonomian dan SDA)</strong></td>
+    </tr>
+    <tr>
+      <td><center>4</center></td>
+      <td><strong>SANDY PERDANA AS, ST., MT</strong></td>
+      <td><strong>19801025 200604 1 006</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Infrastruktur dan Kewilayahan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>5</center></td>
+      <td><strong>EUIS ROSTINI, SP</strong></td>
+      <td><strong>19741202 200901 2 001</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Perencanaan dan Pendanaan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>6</center></td>
+      <td><strong>HENY DWI KRISTYANINGTYAS, ST</strong></td>
+      <td><strong>19820527 200604 2 010</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Infrastruktur dan Kewilayahan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>7</center></td>
+      <td><strong>INTAN FITRIA SANTANA, S.Sos</strong></td>
+      <td><strong>19850613 200902 2 003</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Pemerintahan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>8</center></td>
+      <td><strong>MAMAN SURACHMAN, SE</strong></td>
+      <td><strong>19760224 201001 1 002</strong></td>
+      <td><strong>Perencana Pertama (Sub Bagian Perencanaan Evaluasi dan Pelaporan)</strong></td>
+    </tr>
+    <tr>
+      <td><center>9</center></td>
+      <td><strong>H. DINDIN WAHYUDIN, S.IP</strong></td>
+      <td><strong>19730104 200701 1 006</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Pemerintahan dan Pembangunan Manusia)</strong></td>
+    </tr>
+    <tr>
+      <td><center>10</center></td>
+      <td><strong>H. DEDE SUHENDAR, S.Kep</strong></td>
+      <td><strong>19781108 200501 1 007</strong></td>
+      <td><strong>Perencana Muda (Sub Bidang Pembangunan Manusia)</strong></td>
+    </tr>
+    <tr>
+      <td><center>11</center></td>
+      <td><strong>MUHAMMAD AZIZ SANDRIYA, S.Sos., MA</strong></td>
+      <td><strong>19870716 202012 1 002</strong></td>
+      <td><strong>Ahli Pertama Peneliti</strong></td>
+    </tr>
+    <tr>
+      <td><center>12</center></td>
+      <td><strong>ADE TAHYAN ALIMUDIN, S.IP</strong></td>
+      <td><strong>19790323 200801 1 007</strong></td>
+      <td><strong>Perencana Pertama (Sub Bidang Pemerintahan)</strong></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="table-active">
+        <div class="navbar-nav mr-auto">
+          <center><a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+                  value=>HOME</a></center>
         </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19700608 199703 2 005</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Ahli Madya (Sub Bagian Perekonomian dan SDA)</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>2. NANI HERNIATI, S.KOM</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19770711 200901 2 003</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Subid Pengendalian dan Evaluasi Pemerintahan)</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>3. ELA TJANTINIA PRIATINI, ST</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19671002 200501 2 006</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bagian Perekonomian dan SDA)</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>4. SANDY PERDANA AS, ST., MT</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19801025 200604 1 006</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Infrastruktur dan Kewilayahan)</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>5. EUIS ROSTINI, SP</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19741202 200901 2 001</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Perencanaan dan Pendanaan)</label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>6. HENY DWI KRISTYANINGTYAS, ST</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19820527 200604 2 010</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Infrastruktur dan Kewilayahan)</label>
-        </div>
-    </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>7. INTAN FITRIA SANTANA, S.Sos</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19850613 200902 2 003</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Pemerintahan)</label>
-      </div>
-  </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>8. MAMAN SURACHMAN, SE</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19760224 201001 1 002</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Pertama (Sub Bagian Perencanaan Evaluasi dan Pelaporan)</label>
-      </div>
-  </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>9. H. DINDIN WAHYUDIN, S.IP</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19730104 200701 1 006</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Pemerintahan dan Pembangunan Manusia)</label>
-      </div>
-  </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>10. H. DEDE SUHENDAR, S.Kep</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19781108 200501 1 007</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Muda (Sub Bidang Pembangunan Manusia)</label>
-      </div>
-  </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>11. MUHAMMAD AZIZ SANDRIYA, S.Sos., MA</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19870716 202012 1 002</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Ahli Pertama Peneliti</label>
-      </div>
-  </form>
-</div>
-<div>
-  <form action="" method="POST">
-      <div class="mb-3">
-        <label class="form-control"><strong>12. ADE TAHYAN ALIMUDIN, S.IP</strong></label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19790323 200801 1 007</label>
-      </div>
-      <div class="mb-3">
-        <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Perencana Pertama (Sub Bidang Pemerintahan)</label>
-      </div>
-  </form>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
-          value=>Kembali</a>
-</div>
+      </td>
+    </tr>
+  </table>
+</body>
 {% endblock %}

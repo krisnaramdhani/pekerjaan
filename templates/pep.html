@@ -1,33 +1,74 @@
 {% extends "main_layout.html" %}
 {% block content %}
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>1. FAJAR GUMILAR, S.MB</strong></label>
+<style type="text/css">
+  body {
+    font-family: 'Noto Sans';
+    padding: auto;
+    text-align: left;
+  }
+  table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  tr {
+    width: 5%;
+    background-color: black;
+  }
+  td,th {
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 5px%;
+  }
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkcyan;
+    color: gold;
+  }
+</style>
+<table class="table-dark">
+  <thead color="gold">
+    <th><center><strong>Kepala Sub Bagian Perencanaan Evaluasi dan Pelaporan</strong></center></th>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td><center><strong>FAJAR GUMILAR, S.MB</strong></center></td>
+    </tr>
+    <tr class="table-active">
+      <td><center><strong>NIP. 19721028 200501 1 012</strong></center></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<body>
+  <table>
+    <tr>
+      <th><center>NOMOR</center></th>
+      <th><center>NAMA</center></th>
+      <th><center>NIP</center></th>
+      <th><center>JABATAN</center></th>
+    </tr>
+    <tr>
+      <td><center>1</center></td>
+      <td><strong>IIS SUSANTI, SE</strong></td>
+      <td><center>19760614 200902 2 003</center></td>
+      <td><center>Analis Perencanaan Evaluasi dan Pelaporan</center></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="table-active">
+        <div class="navbar-nav mr-auto">
+          <center><a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
+                  value=>HOME</a></center>
         </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19721028 200501 1 012</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Kepala Sub Bagian Perencanaan Evaluasi dan Pelaporan </label>
-        </div>
-    </form>
-</div>
-<div>
-    <form action="" method="POST">
-        <div class="mb-3">
-          <label class="form-control"><strong>2. IIS SUSANTI, SE</strong></label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;NIP. 19760614 200902 2 003</label>
-        </div>
-        <div class="mb-3">
-          <label class="form-control">&nbsp;&nbsp;&nbsp;&nbsp;Analis Perencanaan, Evaluasi dan Pelaporan</label>
-        </div>
-    </form>
-</div>
-<div class="navbar-nav mr-auto">
-  <a class="nav-item nav-link" href="{{ url_for('index') }}"><input type="submit" class="btn btn-primary btn btn-outline-warning"
-          value=>Kembali</a>
-</div>
+      </td>
+    </tr>
+  </table>
+</body>
 {% endblock %}
