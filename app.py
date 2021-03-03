@@ -17,13 +17,20 @@ def index():
             session['password'] = password
             return redirect(url_for("sukses_req"))
         else:
-            return redirect(url_for("index"))
+            return redirect(url_for("logingagal"))
     return render_template("index.html")
 
 @app.route("/home")
 def sukses_req():
     if "user" in session:
         return render_template("home.html")
+    else:
+        return redirect(url_for('logingagal'))
+
+@app.route("/logingagal")
+def logingagal():
+    if "user" not in session:
+        return render_template("logingagal.html")
     else:
         return redirect(url_for('index'))
 
@@ -32,154 +39,154 @@ def sekretariat():
     if "user" in session:
         return render_template("sekretariat.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/umpeg")
 def umpeg():
     if "user" in session:
         return render_template("umpeg.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/pep")
 def pep():
     if "user" in session:
         return render_template("pep.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/keuangan")
 def keuangan():
     if "user" in session:
         return render_template("keuangan.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/bidangppe")
 def bidangppe():
     if "user" in session:
         return render_template("bidangppe.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidppe1")
 def subidppe1():
     if "user" in session:
         return render_template("subidppe1.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidppe2")
 def subidppe2():
     if "user" in session:
         return render_template("subidppe2.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/bidangppm")
 def bidangppm():
     if "user" in session:
         return render_template("bidangppm.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidppm1")
 def subidppm1():
     if "user" in session:
         return render_template("subidppm1.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidppm2")
 def subidppm2():
     if "user" in session:
         return render_template("subidppm2.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/bidangpik")
 def bidangpik():
     if "user" in session:
         return render_template("bidangpik.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidpik1")
 def subidpik1():
     if "user" in session:
         return render_template("subidpik1.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidpik2")
 def subidpik2():
     if "user" in session:
         return render_template("subidpik2.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/bidanglitbang")
 def bidanglitbang():
     if "user" in session:
         return render_template("bidanglitbang.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidlitbang1")
 def subidlitbang1():
     if "user" in session:
         return render_template("subidlitbang1.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/subidlitbang2")
 def subidlitbang2():
     if "user" in session:
         return render_template("subidlitbang2.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/fungsional")
 def fungsional():
     if "user" in session:
         return render_template("fungsional.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/thl")
 def thl():
     if "user" in session:
         return render_template("thl.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/satpam")
 def satpam():
     if "user" in session:
         return render_template("satpam.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/ob")
 def ob():
     if "user" in session:
         return render_template("ob.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/sopir")
 def sopir():
     if "user" in session:
         return render_template("sopir.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/keterangan")
 def keterangan():
     if "user" in session:
         return render_template("keterangan.html")
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/logout")
 def logout():
@@ -188,7 +195,7 @@ def logout():
         session.pop("password")
         return redirect(url_for('index'))
     else:
-        return redirect(url_for('index'))
+        return redirect(url_for('logingagal'))
 
 @app.route("/redirect-sekretariat")
 def redirect_sekretariat():
